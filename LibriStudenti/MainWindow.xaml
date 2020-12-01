@@ -106,7 +106,7 @@
                                         <ColumnDefinition/>
                                     </Grid.ColumnDefinitions>
                                     <Grid Grid.Column="0">
-                                        <Label Content="Cognome" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="15"/>
+                                        <Label Content="Prezzo" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Arial" FontSize="15"/>
                                     </Grid>
                                     <Grid Grid.Column="1">
                                         <TextBox x:Name="txtPrezzo" VerticalAlignment="Center" HorizontalAlignment="Center" Width="90" Height="25"/>
