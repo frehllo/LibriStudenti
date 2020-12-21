@@ -64,7 +64,7 @@
                                 </Grid>
 
                                 <Grid Grid.Row="3">
-                                    <Button x:Name="btnCaricaStudente" Height="25" Width="150" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Carica Studente" FontFamily="Arial" FontWeight="SemiBold"/>
+                                    <Button x:Name="btnCaricaStudente" Height="25" Width="150" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Carica Studente" FontFamily="Arial" FontWeight="SemiBold" Click="BtnCaricaStudente_Click"/>
                                 </Grid>
 
                                 <Grid Grid.Row="4">
@@ -114,11 +114,15 @@
                                 </Grid>
 
                                 <Grid Grid.Row="3">
-                                    <Button x:Name="btnCaricaLibro" Height="25" Width="150" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Carica Libro" FontFamily="Arial" FontWeight="SemiBold"/>
+                                    <Button x:Name="btnCaricaLibro" Height="25" Width="150" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Carica Libro" FontFamily="Arial" FontWeight="SemiBold" Click="btnCaricaLibro_Click"/>
                                 </Grid>
 
                                 <Grid Grid.Row="4">
-                                    <ComboBox x:Name="cmbLibro" Height="23" Width="200"/>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="76*"/>
+                                        <ColumnDefinition Width="139*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox x:Name="cmbLibro" Height="23" Width="200" Grid.ColumnSpan="2" Margin="8,10,7,10"/>
                                 </Grid>
                             </Grid>
                         </Grid>
@@ -140,14 +144,14 @@
                             <Button x:Name="btnCancella" Content="Esci" FontFamily="Arial" FontWeight="SemiBold" VerticalAlignment="Bottom" Margin="0,0,0,5" Width="90" Height="20"></Button>
                             <Button x:Name="btnEsci" Content="Cancella" FontFamily="Arial" FontWeight="SemiBold" VerticalAlignment="Bottom" Margin="0,0,0,30" Width="90" Height="20"></Button>
                         </Grid>
-                        
-                        
+
+
                     </Grid>
-                    
+
                 </StackPanel>
             </Grid>
-            
-            
+
+
         </StackPanel>
     </ScrollViewer>
 </Window>
